@@ -10,7 +10,7 @@ class _WorldState extends State<World> {
   final String url = "https://corona.lmao.ninja/v2/countries";
   Future<List> datas;
   Future<List> getData() async {
-    var response = await Dio().get(url);
+    var response = await Dio().get(url); 
     return response.data;
   }
 
